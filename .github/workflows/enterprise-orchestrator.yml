@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       username:
-        description: "Enter your username"
+        description: "SIVA "
         required: true
         default: "Raham"
         type: string
@@ -32,7 +32,7 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
 
     steps:
       - name: Checkout
@@ -50,7 +50,7 @@ jobs:
 
   test:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
 
     steps:
       - name: Checkout
@@ -62,7 +62,7 @@ jobs:
 
   security:
     needs: test
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-slim
 
     steps:
       - name: Security Check
