@@ -22,7 +22,7 @@ on:
       deploy:
         description: "Do you want to deploy?"
         required: true
-        default: false
+        default: true
         type: boolean
 
 
