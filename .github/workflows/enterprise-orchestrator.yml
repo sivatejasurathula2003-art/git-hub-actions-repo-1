@@ -1,10 +1,7 @@
 name: CI-WORKFLOW
 
 on:
-  push:
-    branches: ["master", "main", "dev"]
-
-  workflow_dispatch:
+  workflow_dispatch:  
     inputs:
       username:
         description: "SIVA "
