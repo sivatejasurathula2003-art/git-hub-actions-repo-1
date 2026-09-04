@@ -43,6 +43,7 @@ jobs:
 
       - name: Build
         run: npm install
+        
       - name: Install Dependencies
       run: npm install
 
